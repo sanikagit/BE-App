@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">डॉ। पी</string>
+    <string name="dr_p">डॉ। पी</string>
+    <string name="hello_and_welcome_to_dr_p">नमस्कार और डॉ। पी में आपका स्वागत है</string>
+    <string name="upload">अपलोड करो</string>
+    <string name="predict">खोज</string>
+    <string name="you_could_refer_these_steps_for_a_smooth_experience_1_click_on_the_upload_button_to_select_image_file_from_your_device_s_gallery_2_click_on_the_predict_button_to_get_instant_analysis_and_remedies_3_don_t_forget_to_check_out_our_best_practices_of_gardening_at_the_bottom_of_this_page">आप एक सहज अनुभव के लिए इन चरणों का उल्लेख कर सकते हैं। 1. अपने डिवाइस की गैलरी से छवि फ़ाइल का चयन करने के लिए अपलोड बटन पर क्लिक करें।   2. त्वरित विश्लेषण और उपचार प्राप्त करने के लिए पूर्वानुमान बटन पर क्लिक करें।   3. इस पृष्ठ के नीचे बागवानी की हमारी सर्वोत्तम प्रथाओं की जाँच करना न भूलें।</string>
+    <string name="change_language">भाषा बदलो</string>
+</resources>

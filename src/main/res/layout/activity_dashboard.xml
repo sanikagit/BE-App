@@ -4,34 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".Dashboard">
-    <include
-        android:id="@+id/include"
-        layout="@layout/toolbar"
-        android:layout_width="0dp"
-        android:layout_height="90dp"
-        android:background="@android:color/darker_gray"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout"
-        tools:ignore="UnknownId" />
+
+    <!--    <include-->
+    <!--        android:id="@+id/include"-->
+    <!--        layout="@layout/toolbar"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_marginBottom="437dp"-->
+    <!--        android:background="@android:color/darker_gray"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/button2"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        tools:ignore="UnknownId" />-->
 
 
-    <EditText
+    <!--    <ImageView-->
+    <!--        android:layout_width="250dp"-->
+    <!--        android:layout_height="200dp"-->
+    <!--        android:src="@mipmap/ic_launcher"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2"-->
+    <!--        android:id="@+id/imageView"/>-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/editTextTextMultiLine2"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="84dp"-->
+    <!--        android:layout_marginLeft="84dp"-->
+    <!--        android:layout_marginTop="66dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:gravity="start|top"-->
+    <!--        android:inputType="textMultiLine"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/button" />-->
+
+    <TextView
         android:id="@+id/editTextTextMultiLine"
         android:layout_width="0dp"
         android:layout_height="51dp"
         android:layout_marginStart="63dp"
         android:layout_marginLeft="63dp"
-        android:layout_marginTop="189dp"
+        android:layout_marginTop="212dp"
         android:layout_marginEnd="63dp"
         android:layout_marginRight="63dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        android:text="     Hello and Welcome to Dr. P"
+        android:text="@string/hello_and_welcome_to_dr_p"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,41 +69,31 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
-        android:layout_marginLeft="26dp"
-        android:layout_marginBottom="274dp"
-        android:text="Upload"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="takePicture"
+        android:text="@string/upload"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginRight="29dp"
-        android:text="Predict"
+        android:layout_marginBottom="156dp"
+        android:text="@string/predict"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
-
-    <EditText
-        android:id="@+id/editTextTextMultiLine2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginLeft="84dp"
-        android:layout_marginTop="66dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
 
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="150dp"
         android:layout_marginStart="45dp"
         android:layout_marginLeft="45dp"
         android:layout_marginTop="38dp"
@@ -82,20 +102,37 @@
         android:layout_marginBottom="21dp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine">
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
+        app:layout_constraintVertical_bias="0.036">
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" You could refer these steps for a smooth experience.
-                       1. Click on the upload button to select image file from your device's gallery.
-                       2. Click on the predict button to get instant analysis and remedies.
-                       3. Don't forget to check out our best practices of gardening at the bottom of
-                          this page."
+            android:text="@string/you_could_refer_these_steps_for_a_smooth_experience_1_click_on_the_upload_button_to_select_image_file_from_your_device_s_gallery_2_click_on_the_predict_button_to_get_instant_analysis_and_remedies_3_don_t_forget_to_check_out_our_best_practices_of_gardening_at_the_bottom_of_this_page"
             android:textSize="18sp"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="223dp" />
     </ScrollView>
+
+    <Button
+        android:id="@+id/changeMyLang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_language"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="114dp"
+        android:layout_height="124dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changeMyLang"
+        app:srcCompat="@drawable/logo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

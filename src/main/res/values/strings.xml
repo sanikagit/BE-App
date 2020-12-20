@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Dr. P</string>
+    <string name="dr_p">Dr. P</string>
+    <string name="hello_and_welcome_to_dr_p">Hello and Welcome to Dr. P</string>
+    <string name="upload">Upload</string>
+    <string name="predict">Predict</string>
+    <string name="you_could_refer_these_steps_for_a_smooth_experience_1_click_on_the_upload_button_to_select_image_file_from_your_device_s_gallery_2_click_on_the_predict_button_to_get_instant_analysis_and_remedies_3_don_t_forget_to_check_out_our_best_practices_of_gardening_at_the_bottom_of_this_page">You could refer these steps for a smooth experience. 1. Click on the upload button to select image file from your device\'s gallery. 2. Click on the predict button to get instant analysis and remedies. 3. Don\'t forget to check out our best practices of gardening at the bottom of this page.</string>
+    <string name="change_language">Change Language</string>
 </resources>

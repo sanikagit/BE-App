@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">डॉ पी</string>
+    <string name="dr_p">डॉ पी</string>
+    <string name="hello_and_welcome_to_dr_p">नमस्कार आणि डॉ पी मध्ये आपले स्वागत आहे</string>
+    <string name="upload">अपलोड करा</string>
+    <string name="predict">शोध</string>
+    <string name="you_could_refer_these_steps_for_a_smooth_experience_1_click_on_the_upload_button_to_select_image_file_from_your_device_s_gallery_2_click_on_the_predict_button_to_get_instant_analysis_and_remedies_3_don_t_forget_to_check_out_our_best_practices_of_gardening_at_the_bottom_of_this_page">"गुळगुळीत अनुभवासाठी आपण या चरणांचा संदर्भ घेऊ शकता. 1. आपल्या डिव्हाइसच्या गॅलरीतून प्रतिमा फाइल निवडण्यासाठी अपलोड बटणावर क्लिक करा. २. त्वरित विश्लेषण आणि उपाय मिळविण्यासाठी पूर्वानुमान बटणावर क्लिक करा. या पृष्ठाच्या तळाशी बागकामाच्या आमच्या सर्वोत्तम पद्धती तपासणे विसरू नका. "</string>
+    <string name="change_language">भाषा बदला</string>
+</resources>
